@@ -1,21 +1,7 @@
-/*
- *Go here:http://melchoyce.github.io/dashicons/ to get CSS code
- */
-
-/* Make sure the span class is mce<name of button from JS file> */
-span.mce_tinymce_dashicon:before {
-	content: "\f319";
+div.half-width {
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	width: 50%;
+	min-height: 20px;
+	float: left;
+	border: 1px dashed #666;
 }
-
-/*
- * These are fallbacks, I haven't customized them at all, they're just here for reference
- */
-.no-font-face .wp_themeSkin span.mce_tinymce_dashicon {
-	-moz-transition: none;
-	-webkit-transition: none;
-	transition: none;
-	background-image: url('../../../../wp-includes/images/wpicons.png?ver=20120720');
-}
-.no-font-face .wp_themeSkin span.mce_tinymce_dashicon {background-position:-360px -20px}
-.no-font-face .wp_themeSkin .mceButtonEnabled:hover span.mce_wusm_put_pullquote,
-.no-font-face .wp_themeSkin .mceButtonActive span.mce_wusm_put_pullquote {background-position:-360px 0} 

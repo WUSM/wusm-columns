@@ -1,18 +1,18 @@
 (function() {
-	tinymce.create('tinymce.plugins.tinymce_dashicon', {
+	tinymce.create('tinymce.plugins.wusm_columns', {
 
 	/**
 	 *
 	 */
 	init : function(ed, url) {
-		ed.addButton('tinymce_dashicon', {
-			title : 'Dummy Button',
-			cmd   : 'tinymce_dashicon_cmd',
+		ed.addButton('wusm_columns', {
+			title : 'Add columns',
+			cmd   : 'wusm_columns_cmd',
 		});
 
-		ed.addCommand('tinymce_dashicon_cmd', function() {
-			var shortcode = 'YEA! Dashicons in TinyMCE';
-			ed.execCommand( 'mceInsertContent', 0, shortcode );
+		ed.addCommand('wusm_columns_cmd', function() {
+			var divhtml = "<div class='half-width'></div><div class='half-width'></div>";
+			ed.execCommand( 'mceInsertContent', 0, divhtml );
 		});
 	},
 
@@ -38,5 +38,5 @@
 });
 
 // Register plugin
-tinymce.PluginManager.add( 'tinymce_dashicon', tinymce.plugins.tinymce_dashicon );
+tinymce.PluginManager.add( 'wusm_columns', tinymce.plugins.wusm_columns );
 })();
