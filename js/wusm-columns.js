@@ -11,11 +11,13 @@
 		});
 
 		ed.addCommand('wusm_columns_cmd', function() {
-			var cols = prompt( "Number of columns?" ),
+			var cols = prompt( "Number of columns? (up to 4)" ),
 				divhtml = "";
+			if ( cols > 4 )
+				cols = 4;
 			for (var i = 0; i < cols; i++) {
 				divhtml += "<div class='cols-" + cols + "'></div>";
-			};
+			}
 			ed.execCommand( 'mceInsertContent', 0, divhtml );
 		});
 	},
