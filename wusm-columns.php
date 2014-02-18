@@ -4,7 +4,7 @@ Plugin Name: WUSM Columns in content
 Plugin URI: 
 Description: Add a button that lets you break the main content into columns
 Author: Aaron Graham
-Version: 14.02.18.0
+Version: 14.02.18.1
 Author URI: 
 */
 
