@@ -13,6 +13,8 @@
 		ed.addCommand('wusm_columns_cmd', function() {
 			var cols = prompt( "Number of columns? (up to 4)" ),
 				divhtml = "";
+			if ( cols < 2 )
+				cols = 2;
 			if ( cols > 4 )
 				cols = 4;
 			for (var i = 0; i < cols; i++) {
