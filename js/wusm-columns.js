@@ -11,7 +11,11 @@
 		});
 
 		ed.addCommand('wusm_columns_cmd', function() {
-			var divhtml = "<div class='half-width'></div><div class='half-width'></div>";
+			var cols = prompt( "Number of columns?" ),
+				divhtml = "";
+			for (var i = 0; i < cols; i++) {
+				divhtml += "<div class='cols-" + cols + "'></div>";
+			};
 			ed.execCommand( 'mceInsertContent', 0, divhtml );
 		});
 	},
