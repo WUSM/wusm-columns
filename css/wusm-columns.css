@@ -1,4 +1,6 @@
 div.half-width {
 	width: 50%;
 	float: left;
+	padding: 20px;
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
