@@ -1,6 +1,7 @@
 div.cols-2,div.cols-3,div.cols-4 {
 	float: left;
-	padding: 20px;
+	border-right: 1px solid #eeeeed;
+	padding: 10px;
 	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
