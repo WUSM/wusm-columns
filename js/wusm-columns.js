@@ -6,6 +6,7 @@
 	 */
 	init : function(ed, url) {
 		ed.addButton('wusm_columns', {
+			icon  : 'code',
 			title : 'Add columns',
 			cmd   : 'wusm_columns_cmd',
 		});

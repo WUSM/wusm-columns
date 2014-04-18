@@ -4,7 +4,7 @@ Plugin Name: WUSM Columns in content
 Plugin URI: 
 Description: Add a button that lets you break the main content into columns
 Author: Aaron Graham
-Version: 14.02.20.0
+Version:14.04.18.0
 Author URI: 
 */
 
@@ -45,7 +45,7 @@ class wusm_columns_plugin {
 	}
 	
 	public function admin_init() {
-		add_filter( 'style_loader_tag', array( $this, 'style_loader_tag' ), 50, 2 );
+		//add_filter( 'style_loader_tag', array( $this, 'style_loader_tag' ), 50, 2 );
 		add_filter( 'mce_external_plugins', array( $this, 'add_buttons' ) );
 		add_filter( 'mce_buttons', array( $this, 'register_buttons' ) );
 		add_editor_style( plugin_dir_url( __FILE__ ) . 'css/wusm-columns-admin.css'  );
