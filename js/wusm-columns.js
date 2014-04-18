@@ -13,16 +13,13 @@
 
 		ed.addCommand('wusm_columns_cmd', function() {
 			var cols = prompt( "Number of columns? (up to 4)" ),
-				divhtml = "",
-				last = "";
+				divhtml = "";
 			if ( cols < 2 )
 				cols = 2;
 			if ( cols > 4 )
 				cols = 4;
 			for (var i = 0; i < cols; i++) {
-				if ( cols == i )
-					last = " last-child";
-				divhtml += "<div class='cols-" + cols + last + "'></div>";
+				divhtml += "<div class='cols-" + cols + "'></div>";
 			}
 			ed.execCommand( 'mceInsertContent', 0, divhtml );
 		});
