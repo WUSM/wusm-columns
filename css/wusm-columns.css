@@ -15,3 +15,9 @@ div.cols-3 {
 div.cols-4 {
 	width: 25%;
 }
+
+div.cols-2 li,
+div.cols-3 li,
+div.cols-4 li {
+	position: relative;
+}
