@@ -43,7 +43,7 @@
 			infourl   : '',
 			version   : "0.1"
 		};
-		}
+	}
 });
 
 // Register plugin
