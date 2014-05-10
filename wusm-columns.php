@@ -4,7 +4,7 @@ Plugin Name: WUSM Columns in content
 Plugin URI: 
 Description: Add a button that lets you break the main content into columns
 Author: Aaron Graham
-Version:14.05.01.1
+Version:14.05.10.0
 Author URI: 
 */
 
@@ -22,10 +22,10 @@ function github_plugin_updater_wusm_columns_init() {
 				$config = array(
 						'slug' => plugin_basename( __FILE__ ),
 						'proper_folder_name' => 'wusm-columns',
-						'api_url' => 'https://api.github.com/repos/coderaaron/wusm-columns',
-						'raw_url' => 'https://raw.github.com/coderaaron/wusm-columns/master',
-						'github_url' => 'https://github.com/coderaaron/wusm-columns',
-						'zip_url' => 'https://github.com/coderaaron/wusm-columns/archive/master.zip',
+						'api_url' => 'https://api.github.com/repos/wusm/wusm-columns',
+						'raw_url' => 'https://raw.github.com/wusm/wusm-columns/master',
+						'github_url' => 'https://github.com/wusm/wusm-columns',
+						'zip_url' => 'https://github.com/wusm/wusm-columns/archive/master.zip',
 						'sslverify' => true,
 						'requires' => '3.0',
 						'tested' => '3.8',
